@@ -36,7 +36,7 @@ function App() {
 
   const initiateLinkedInAuthentication = () => {
     const CLIENT_ID = '86hxkyeb0qpkdn'; // Your LinkedIn Client ID
-    const REDIRECT_URI = encodeURIComponent('http://localhost:5173/callback'); // Your redirect URI
+    const REDIRECT_URI = encodeURIComponent('https://authtesting-223.netlify.app//callback'); // Your redirect URI
     const SCOPE = encodeURIComponent('w_member_social');
 
     const authorizationUrl = `https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&scope=${SCOPE}`;
@@ -52,7 +52,7 @@ function App() {
 
     const CLIENT_ID = '86hxkyeb0qpkdn';
     const CLIENT_SECRET = 'WPL_AP1.6YMZbA8GjbPtGQqc.IaOXSQ==';
-    const REDIRECT_URI = 'http://localhost:5173/callback';
+    const REDIRECT_URI = 'https://authtesting-223.netlify.app//callback';
 
     const response = await fetch('https://www.linkedin.com/oauth/v2/accessToken', {
       method: 'POST',
