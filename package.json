@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  
   "dependencies": {
     "@apollo/client": "^3.12.4",
     "axios": "^1.7.9",
